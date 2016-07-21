@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wall-o-Mart</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body ng-app="Wall-o-Mart">
+    <h1 ng-class="{ 'error-message': true, 'shown': errorHappened }">SORRY THERE WAS A PROBLEM GOING TO THAT PAGE.</h1>
+    <ul id="navbar">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="catalog">Catalog</a></li>
+    </ul>
+    <div id="main-container" ui-view></div>
+    <script src="/angular/angular.js"></script>
+    <script src="angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="factories/items.js"></script>
+    <script src="directives/item.js"></script>
+</body>
+</html>

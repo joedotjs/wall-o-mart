@@ -1,0 +1,43 @@
+#main-container {
+    clear: both;
+}
+
+.error-message {
+    background: red;
+    color: white;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.error-message.shown {
+    left: 200px;
+    opacity: 1;
+    width: 500px;
+}
+
+.item {
+    width: 200px;
+    background: rgba(0, 120, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+.item img {
+    display: block;
+    margin: 0 auto;
+}
+
+#navbar {
+    margin-top: 150px;
+}
+
+#navbar li {
+    float: left;
+    margin-right: 20px;
+}
